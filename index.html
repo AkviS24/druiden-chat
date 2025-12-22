@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./logic/script.js" defer></script>
+    <title>Chat App Asbo</title>
+</head>
+
+<body class="body">
+    <section class="hero">
+        <article class="content-container ">
+            <div id="ausgabe" class="messenger">
+                <img id="druidenBild" class="girl" src="./img/woman-8793320_640.png">
+                <div class="output">
+                    <h1 id="h1">Stell mir eine Frage</h1>
+                    <p class="notDisplay" id="userOutput"></p>
+                    <p class="notDisplay" id="botOutput"></p>
+                </div>
+            </div>
+        </article>
+
+        <article id="error" class="content-container error notDisplay">
+            <h2>Es sind Fehler aufgetreten</h2>
+            <p>Die Mindestlänge für den Namen beträgt <b>3</b> Zeichen.<br>
+            Und der Mindestwert für eine Nachricht sind <b>4</b> Zeichen</p>
+            <button id="checkError" onclick="verstanden()">Verstanden</button>
+        </article>
+
+        <article class="content-container">
+            <div class="input-area">
+                <input type="text" id="name" minlength="3" placeholder="Gib deinen Namen ein" required><br>
+                <textarea type="text" id="message" minlength="4" placeholder="Gib deine Nachricht ein" required></textarea><br>
+                <button onclick="printmessage()">Abschicken</button>
+                <button id="darkmodeBtn" onclick="darkmode()">Anderen Druiden fragen</button>
+            </div>
+        </article>
+
+        <article class="header">
+            <nav class="links">
+                <ul class="nav-items">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">LOG-IN</a></li>
+                    <li><a href="#">REGISTER</a></li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
+</body>
+
+</html>
