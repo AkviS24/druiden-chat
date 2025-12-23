@@ -64,7 +64,7 @@
 }
 
 .messenger {
-    max-width: 800px;
+    width: 800px;
     min-width: 300px;
     min-height: 450px;
     background-color: bisque;
@@ -75,7 +75,7 @@
 }
 
 .messenger-darkmode {
-    max-width: 800px;
+    width: 800px;
     min-width: 300px;
     min-height: 450px;
     background-color: darkslategrey;
