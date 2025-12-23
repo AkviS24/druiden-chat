@@ -22,7 +22,7 @@ function printmessage() {
     userOutput.classList.remove("notDisplay");
     botOutput.classList.remove("notDisplay");
     userOutput.innerHTML = `<b>${nameRef.value}:</b>` + ` ${messageRef.value}`;
-    if (messageRef.value == "Hi") {
+    if (messageRef.value == "Hallo") {
         botOutput.innerHTML = "Hi " + `${nameRef.value}` + " schön das du da bist";
     } else if (questCounter > 3) {
         botOutput.innerHTML = "";
