@@ -12,7 +12,7 @@
 }
 
 .body-darkmode {
-    background: linear-gradient(45deg, black, rgb(18, 2, 90));
+    background: linear-gradient(45deg, black, rgb(23, 2, 117));
     background-repeat: no-repeat;
     min-height: 100vh;
     overflow: hidden;
