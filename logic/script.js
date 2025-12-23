@@ -16,13 +16,15 @@ let questCounter = 0;
 let darkmodeOn = false;
 
 function printmessage() {
-    checkMessage();
     console.log("Funktion ausgeführt");
     questCounter++;
     userOutput.classList.remove("notDisplay");
     botOutput.classList.remove("notDisplay");
     userOutput.innerHTML = `<b>${nameRef.value}:</b>` + ` ${messageRef.value}`;
-    if (messageRef.value == "Hallo") {
+    if (nameRef.value.length < 3 || messageRef.value.length < 4) {
+        errorRef.classList.remove("notDisplay");
+    }
+    else if (messageRef.value == "Hallo") {
         botOutput.innerHTML = "Hi " + `${nameRef.value}` + " schön das du da bist";
     } else if (questCounter > 3) {
         botOutput.innerHTML = "";
@@ -34,12 +36,6 @@ function printmessage() {
     else {
         botOutput.innerHTML = "";
         botOutput.innerHTML = "Passe, nächste Frage";
-    }
-}
-
-function checkMessage() {
-    if (nameRef.value.length < 3 || messageRef.value.length < 4) {
-        errorRef.classList.remove("notDisplay");
     }
 }
 
