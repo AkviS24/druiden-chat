@@ -28,7 +28,7 @@ function printmessage() {
         botOutput.innerHTML = "Hi " + `${nameRef.value}` + " schön das du da bist";
     } else if (questCounter > 3) {
         botOutput.innerHTML = "";
-        botOutput.innerHTML = "Schluss jetzt mit diesem <b>albernen</b> Rumgefrage ich muss Druiden Dinge machen...";
+        botOutput.innerHTML = "Schluss jetzt mit diesem <b>albernen</b> Rumgefrage ich muss Druiden Dinge erledigen...";
     } else if (messageRef.value == "Was ist der Sinn des Lebens?") {
         botOutput.innerHTML = "";
         botOutput.innerHTML = "Nach langem Überlegen, komme ich zu der Ansicht, dass die Antwort auf dein Frage nur <b>42</b> sein kann.";
