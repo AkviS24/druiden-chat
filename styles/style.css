@@ -11,6 +11,13 @@
     overflow: hidden;
 }
 
+.body-darkmode {
+    background: linear-gradient(45deg, black, rgb(18, 2, 90));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .hero {
     display: flex;
 }
